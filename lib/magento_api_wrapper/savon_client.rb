@@ -40,7 +40,7 @@ module MagentoApiWrapper
 
     #TODO: make configurable
     def log_env
-      true
+      false
     end
 
     #correctly format MagentoApiWrapper::Request call_names for SOAP v2
