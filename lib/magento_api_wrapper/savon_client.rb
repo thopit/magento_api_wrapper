@@ -15,7 +15,7 @@ module MagentoApiWrapper
     #message_with_attributes are required for some specific formatting when updating Magento via the SOAP API
     def message_with_attributes
       @request.body.merge!(:attributes! => @request.attributes) unless @request.attributes.empty?
-      puts "REQUEST: #{@request.inspect}"
+      #puts "REQUEST: #{@request.inspect}"
       return @request.body
     end
 
